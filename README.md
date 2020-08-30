@@ -1,10 +1,11 @@
 # COMANDOS MAS COMUNES PENTESTING 🚀
 
 ## Estabilizar shell 🔧
+```
 /usr/bin/script -qc /bin/bash /dev/null
 Ctrl+z
 stty raw -echo;fg
-
+```
 ## NMAP básico 🔧
 nmap -sC -sV -oN initial $IP
 
