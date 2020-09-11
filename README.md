@@ -44,3 +44,7 @@ gpg --list-keys --> listar claves
 gpg --import /var/backup/root@harder.local.pub --> importar claves
 gpg -er root command --> encryptar archivo con la clave
 ```
+_Ver puertos abiertos:_
+```
+sudo netstat -tulpn | grep LISTEN
+```
