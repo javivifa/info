@@ -60,3 +60,7 @@ _wordpress:
 wpscan --url site.wekor.thm/wordpress -e vp,vt,cb,u
 wpscan --url http://site.wekor.thm/wordpress/-U user.txt -P /usr/share/wordlists/rockyou.txt -vv
 ```
+_Open ports linux
+```
+ss -lntp
+```
